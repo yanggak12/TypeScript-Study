@@ -25,7 +25,4 @@ let blockchain:[Block] = [genesisBlock];
 
 console.log(blockchain)
 
-
-
-
 export {};
