@@ -4,5 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "description": "Learning TypeScript by making BlockChain with it.",
-  "repository": "git@github.com:yanggak12/TypeScript-Study.git"
+  "repository": "git@github.com:yanggak12/TypeScript-Study.git",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
 }
