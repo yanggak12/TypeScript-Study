@@ -82,7 +82,7 @@ const isBlockValid = (candidateBlock: Block, previousBlock: Block): boolean => {
     return false;
   } else if (previousBlock.index + 1 !== candidateBlock.index) {
     return false;
-  } else if (previousBlock.hash !== candidateBlock.hash) {
+  } else if (previousBlock.hash !== candidateBlock.previoushash) {
     return false;
   } else if (getHashforBlock(candidateBlock) !== candidateBlock.hash) {
     return false;
@@ -97,8 +97,8 @@ const addBlock = (candidateBlock: Block): void => {
   }
 };
 
-createNewBlock("123");
-
+createNewBlock("second");
+createNewBlock("New New");
 console.log(blockchain);
 
 export {};
